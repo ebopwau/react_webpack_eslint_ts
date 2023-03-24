@@ -7,7 +7,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "types": ["jest", "@testing-library/jest-dom"],
     "typeRoots": ["./node_modules/@types"],
     "sourceMap": true,
     "allowJs": true,

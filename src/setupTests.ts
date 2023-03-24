@@ -1,4 +1,12 @@
+import React from 'react';
 import Enzyme from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+import EnzymeAdapter from '@cfaester/enzyme-adapter-react-18';
 
-Enzyme.configure({ adapter: new Adapter() });
+import 'jest-styled-components';
+
+global.React = React;
+
+console.error = () => {};
+console.warn = () => {};
+
+Enzyme.configure({ adapter: new EnzymeAdapter() });
